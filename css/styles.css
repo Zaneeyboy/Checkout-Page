@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    box-sizing:border-box;
+    font-family: 'Montserrat',sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#fff;
+    padding:4rem 8rem 0;
+}
+
+/* Title */
+.title{
+    color:#333333;
+    font-size:2.25rem;
+    font-weight:600;
+    margin-bottom:3rem;
+}
+
+main{
+    /* display:grid;
+    column-gap:1.5rem;
+    grid-template-areas:"form cart";
+    grid-template-columns:1fr 1fr; */
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.cart-wrapper{
+    
+    grid-area:cart;
+}
+
+/* cart */
+.cart-container{
+    background-color: #f2f2f2;
+    border-radius:12px;
+    border:none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:1.5rem 2rem;
+}
+
+.cart-item-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:1.8rem;
+}
+
+.img-container{
+    width:50%;
+}
+
+.img-container>img{
+    border-radius:12px;
+    height:100%;
+    width:100%;
+}
+
+.item-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:1.5rem;
+    width:50%;
+}
+
+.item-name{
+    color:#4e5150;
+    font-size:1.1rem;
+    font-weight:500;
+}
+
+.price{
+    display:flex;
+}
+
+.current-price{
+    color:#F2994A;
+    font-size:0.9rem;
+    font-weight:500;
+    margin-top:0.3rem;
+}
+
+.previous-price{
+    color:#4e5150;
+    font-size:0.8rem;
+    font-weight:500;
+    text-decoration: line-through;
+    margin:0.3rem 0 0 0.5rem;
+}
+
+.item-quantity-container{
+    align-items: center;
+    border:1px solid #828282;
+    border-radius:12px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.8rem 1rem;
+    width:80%;
+}
+
+.item-quantity-container>span{
+    color:#333333;
+    font-size:1rem;
+    font-weight:400;
+}
+
+.item-quantity-container>button{
+    background-color:#e0e0e0;
+    color:#828282;
+    border:none;
+    border-radius:2px;
+    font-size:1rem;
+    font-weight:500;
+    padding:0 0.2rem;
+}
+
+.cart-costs{
+    display:flex;
+    flex-direction: column;
+}
+
+.shipping, .total{
+    border-top: 1px solid #bdbdbd;
+    display:flex;
+    font-size:1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.5rem 0;
+    
+}
+
+.cost{
+    color:#333333;
+    font-size:0.875rem;
+    font-weight:600;
+}
+
+form{
+    width:100%;
+}
+
+/* form */
+.form-title{
+    color:#333333;
+    font-size:1.5rem;
+    grid-area:form;
+    margin-bottom:1rem;
+}
+
+.shipping-address{
+    margin-top:1.8rem;
+}
+
+label, select{
+    color:#4f4f4f;
+    font-size:0.8rem;
+    font-weight:600;
+    margin-top:0.3rem;  
+}
+
+.material-icons{
+    color:#828282;
+    font-size:1.2rem;
+    font-weight:400;
+    margin:0.6rem 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.form-input{
+    border:1px solid #828282;
+    border-radius:6px;
+    color:#828282;
+    font-size:1.2rem;
+    font-weight:500;
+    padding:0.4rem 2.2rem;
+    position:relative;
+    width:90%;
+    z-index:0;
+    margin-bottom:1rem;
+}
+
+select{
+    border:1px solid #828282;
+    border-radius:6px;
+    color:#828282;
+    font-size:1.2rem;
+    font-weight:500;
+    padding:0.4rem 2.2rem 0.2rem;
+    width:100%;
+    margin-top:0;
+}
+
+#name {
+    color: #333333;
+}
+
+.form-col{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    width:90%;
+}
+
+.col>input{
+    width:100%;
+}
+
+#country-icon{
+    margin:0.6rem 0.5rem;
+}
+
+.save{
+    display:flex;
+    align-items: center;
+}
+
+#save{
+    margin:0.2rem 0.5rem 0 0;
+}
+
+.submit-btn{
+    display:flex;
+    justify-content: flex-end;
+    margin-top:0.5rem;
+    width:80%;
+}
+
+.submit-btn>button{
+    font-size:1rem;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    background-color:#F2994A;
+    padding:0.4rem 2rem;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:3rem;
+    margin-bottom:1rem;
+}
+
+.footer-content{
+    color:#a9a9a9;
+    font-size:0.6rem;
+    font-weight:600;
+}
+
+/* Media Queries */
+@media only screen and (max-width:1000px){
+    main{
+        flex-direction:column;
+    }
+
+    .cart-container{
+        margin-bottom:2.5rem;
+    }
+
+    .item-name{
+        font-size:1.5rem;
+    }
+
+    .current-price{
+        font-size:1.2rem;
+    }
+
+    .previous-price{
+        font-size:1.1rem;
+    }
+
+    .item-quantity-container{
+        width:40%;
+    }
+
+    .item-quantity-container>span{
+        font-size:1.3rem;
+    }
+
+    .item-quantity-container>button{
+        font-size:1.3rem
+    }
+
+    .shipping,
+    .total{
+        font-size:1.2rem;
+    }
+
+    .cost{
+        font-size:1.1rem;
+    }
+
+    .form-title{
+        font-size:1.5rem;
+    }
+
+    label,
+    select{
+        font-size:1rem;
+    }
+
+    .material-icons{
+        font-size:1.2rem;
+        margin:0.5rem 0.5rem;
+    }
+
+    .form-input{
+        font-size:1rem;
+        padding:0.4rem 2.2rem;
+        margin-bottom:1rem;
+        width:100%;
+    }
+
+    .form-col{
+        width:100%;
+    }
+
+    .submit-btn{
+        width:100%;
+    }
+
+    .submit-btn>button{
+        padding:1rem 3rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+    body{
+        padding:2rem 1rem 0;
+    }
+
+    .title{
+        font-size:1.5rem;
+    }
+
+    .item-name{
+        font-size:1rem;
+    }
+
+    .current-price,.previous-price{
+        font-size:0.9rem;
+    }
+
+    .item-quantity-container{
+        width:80%;
+    }
+
+    .item-quantity-container>span{
+        font-size:0.8rem;
+    }
+
+    .shipping,
+    .total{
+        font-size:0.9rem;
+    }
+
+    .cost{
+        font-size:0.9rem;
+    }
+
+    .form-title{
+        font-size:1.2rem;
+    }
+
+    label,
+    select{
+        font-size:0.6rem;
+    }
+
+    .material-icons{
+        font-size:1rem;
+    }
+
+    .form-input{
+        font-size:0.7rem;
+    }
+
+    select{
+        font-size:0.7rem;
+        width:100%;
+    }
+
+    .form-col{
+        grid-template-columns: 45% 50%;
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="./images/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <h1 class="title">Checkout</h1>
+    <main class="checkout-container">
+      <div class="cart-wrapper">
+        <div class="cart-container">
+          <div class="cart">
+            <div class="cart-item-container">
+              <div class="img-container">
+                <img src="./images/photo1.png" alt="Cart Item">
+              </div>
+              <div class="item-details-container">
+                <div class="item-details">
+                  <h3 class="item-name">Vintage Backbag</h3>
+                  <div class="price">
+                    <p class="current-price">$54.99</p>
+                    <p class="previous-price">$94.99</p>
+                  </div>
+                </div>
+                <div class="item-quantity-container">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item-container">
+              <div class="img-container">
+                <img src="./images/photo2.png" alt="Cart Item">
+              </div>
+              <div class="item-details-container">
+                <div class="item-details">
+                  <h3 class="item-name">Levi Shoes</h3>
+                  <div class="price">
+                    <p class="current-price">$74.99</p>
+                    <p class="previous-price">124.99</p>
+                  </div>
+                </div>
+                <div class="item-quantity-container">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-costs">
+            <div class="shipping"><h3 class="cost-name">Shipping</h3><p class="cost">$19</p></div>
+            <div class="total"><h3 class="cost-name">Total</h3><p class="cost">$148.98</p></div>
+            
+          </div>
+        </div>
+      </div>
+        
+        <form action="#">
+
+          <h2 class="form-title">Contact Infomation</h2>
+
+          <label for="email">E-mail</label><br>
+          <span class="material-icons">email</span>
+          <input type="email" placeholder="Enter your email.." name="email" class="form-input" id="email">
+
+          <br>
+          <label for="phone">Phone</label><br>
+          <span class="material-icons">local_phone</span>
+          <input type="tel" placeholder="Enter your phone.." name="phone" class="form-input" id="phone">
+
+          <h2 class="form-title shipping-address">Shipping Address</h2>
+          <label for="name">Full Name</label><br>
+          <span class="material-icons">account_circle</span>
+          <input type="text" placeholder="Rodney Cotton" id="name" class="form-input">
+
+          <br>
+          <label for="address">Address</label><br>
+          <span class="material-icons">home</span>
+          <input placeholder="Your address.." type="text" class="form-input" id="address">
+
+          <br>
+          <label for="city">City</label><br>
+          <span class="material-icons">apartment</span>
+          <input placeholder="Your city.." type="text" class="form-input" id="city">
+
+          <br>
+          <div class="form-col">
+            <div class="col">
+              <label for="country">Country</label><br>
+              <span id="country-icon" class="material-icons">public</span>
+              <select id="country" name="country" >
+                <option value="your country" selected>Your Country</option>
+              </select>
+            </div>
+
+            <div class="col">
+              <label for="postal">Postal Code</label><br>
+              <i class="material-icons">markunread_mailbox</i>
+              <input class="form-input" type="number" placeholder="Your Postal Code..">
+            </div>
+          </div>
+          
+          <br>
+          <div class="save"><input type="checkbox" name="save" id="save">
+          <label for="save">Save this information for next time</label></div>
+
+          <div class="submit-btn"><button  type="submit">Continue</button></div>
+          
+        </form>
+    </main>
+
+    <footer>
+      <p class="footer-content">Big Twig @DevChallenges.io</p>
+    </footer>
+  </body>
+</html>
